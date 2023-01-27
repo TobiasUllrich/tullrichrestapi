@@ -1,4 +1,4 @@
 git add .
 git commit -m "%*"
 git push
-chrome "https://www.pythonanywhere.com/user/tullrich/consoles/27096434/"
+start chrome "https://www.pythonanywhere.com/user/tullrich/consoles/27096434/"

@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'todo',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +133,13 @@ MEDIA_ROOT = '/home/tullrich/todolistapi/media'
 MEDIA_URL = '/media/'
 STATIC_ROOT = '/home/tullrich/todolistapi/static'
 STATIC_URL = '/static/'
+
+
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
